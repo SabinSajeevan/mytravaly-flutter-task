@@ -67,33 +67,6 @@ flutter pub get
 3. Run the app
 flutter run
 
-
-## 🧩 Folder Structure
-lib/
-│
-├── core/
-│ ├── error/ # Error handling and exceptions
-│ ├── network/ # Network and API related utilities
-│ └── utils/ # Common helpers and constants
-│
-├── features/
-│ ├── auth/ # Google Sign-In UI and related logic
-│ │ ├── data/ # Data sources and models
-│ │ ├── domain/ # Entities and use cases
-│ │ └── presentation/# BLoC and UI screens
-│ │
-│ ├── home/ # Home screen module
-│ │ ├── data/
-│ │ ├── domain/
-│ │ └── presentation/
-│ │
-│ └── search/ # Search results and pagination module
-│ ├── data/
-│ ├── domain/
-│ └── presentation/
-│
-└── main.dart # App entry point
-
 This project follows a **Clean Architecture + Feature-Based Structure**,  
 ensuring scalability, maintainability, and separation of concerns.
 
