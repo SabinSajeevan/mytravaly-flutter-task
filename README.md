@@ -68,60 +68,65 @@ flutter pub get
 flutter run
 
 
-🧩 Folder Structure
+## 🧩 Folder Structure
 lib/
 │
 ├── core/
-│   ├── data/
-│   ├── network/
-│   └── utils/
+│ ├── error/ # Error handling and exceptions
+│ ├── network/ # Network and API related utilities
+│ └── utils/ # Common helpers and constants
 │
 ├── features/
-│   ├── auth/
-│   │   ├── presentation/
-│   │   ├── domain/
-│   │   └── data/
-│   │
-│   ├── item_list/
-│   │   ├── presentation/
-│   │   ├── domain/
-│   │   └── data/
-│   │
-│   └── item_search_list/
-│       ├── presentation/
-│       ├── domain/
-│       └── data/
+│ ├── auth/ # Google Sign-In UI and related logic
+│ │ ├── data/ # Data sources and models
+│ │ ├── domain/ # Entities and use cases
+│ │ └── presentation/# BLoC and UI screens
+│ │
+│ ├── home/ # Home screen module
+│ │ ├── data/
+│ │ ├── domain/
+│ │ └── presentation/
+│ │
+│ └── search/ # Search results and pagination module
+│ ├── data/
+│ ├── domain/
+│ └── presentation/
 │
-└── main.dart
-Organized following Clean Architecture and feature-based folder structure,
+└── main.dart # App entry point
+
+This project follows a **Clean Architecture + Feature-Based Structure**,  
 ensuring scalability, maintainability, and separation of concerns.
 
 
-✨ Features Implemented
+---
 
-Google Sign-In UI (frontend only)
-Device registration and visitor token management
-Country-based hotel search using the provided API
-Pagination for efficient data handling
-Clean Architecture with BLoC state management
-Responsive Material UI
-Modular and maintainable folder structure
+## ✨ Features Implemented
 
+- 🧠 **Clean Architecture** – Clear separation of concerns between Data, Domain, and Presentation layers.  
+- 🔁 **BLoC State Management** – Predictable, testable, and reactive state handling.  
+- 🔐 **Device Registration Flow** – Generates and manages `visitor_token` before calling APIs.  
+- 🌍 **Country-based Hotel Search** – Uses `countrySearch` as the searchType (currently the only working mode).  
+- 📄 **Pagination Support** – Smooth scrolling and efficient data loading.  
+- 🎨 **Modern UI** – Clean Material Design layout, responsive for different screen sizes.  
+- 🧱 **Scalable Structure** – Easily extendable for more features or backend integration.
 
-🧠 Key Highlights
+---
 
-Clean Architecture: Layered approach separating Data, Domain, and Presentation logic.
-BLoC Pattern: Centralized state management for predictable app behavior.
-Error Handling: Graceful fallback for API/network errors.
-Scalability: Feature-based structure allows easy extension of new modules.
+## 🧠 Key Highlights
 
+- **Clean, layered architecture** – Ideal for larger projects.  
+- **Reusable components** – UI and logic are modular and isolated.  
+- **Error-safe API handling** – Handles failures gracefully.  
+- **Developer-friendly structure** – Easy to navigate and extend.
 
+---
 
+## 👨‍💻 Developer
 
+**Sabin Sajeevan**  
+📍 Thrissur, Kerala, India  
+📞 +91 8281415894  
+🌐 [https://www.sabinsajeevan.com](https://www.sabinsajeevan.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/sabin-sajeevan)
 
-👨‍💻 Developer
-Sabin Sajeevan
-📍 Thrissur, Kerala, India
-📞 +91 8281415894
-🌐 https://www.sabinsajeevan.com
-🔗 LinkedIn
+---
